@@ -1,44 +1,142 @@
-a {
-    text-decoration: none;
-}
-
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Gilroy;
+    src: url("fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: Gilroy;
+}
+
+.center{
+    padding-left: calc(50% - 585px);
+    padding-right: calc(50% - 585px);
 }
 
 .top {
     padding-bottom: 96px;
+
 }
 
 .header {
+    font-weight: 600;
     margin-top: 14px;
     margin-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     margin-top: 40px;
     margin-bottom: 84px;
+    display: block;
 }
-
 
 .top__menu {
     margin-top: 51px;
     margin-bottom: 94, 71px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 26px;
+}
+
+.top__menu>a:hover{
+    color: #F25822; 
+}
+
+.header__link {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
 }
 
 .top__content {
     margin-bottom: 162px;
+    display: flex;
+    gap: 41px;
+    margin-top: 84px;
+}
+
+.top__info {
+
+}
+
+.subtitle{
+    display: flex;
+    margin-bottom: 17px;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+    color: #000000;
 }
 
 .text__topinfo {
     margin-top: 17px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #888888;
+    max-width: 466px;
 }
 
 .top__buttons {
     margin-top: 37px;
 }
 
+.button{
+    padding: 15px 36px;
+    margin-right: 72px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.button_near{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #AAAAAA;
+    border: none;
+    background: inherit;
+}
+
 .top__logos {
     margin-top: 97px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 97px;
+}
+
+.top__logos>a{
+    display: block;
 }
